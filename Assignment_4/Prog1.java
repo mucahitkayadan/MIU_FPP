@@ -1,32 +1,30 @@
-public class LimitedInstancesClass {
-    private static int instanceCount = 0;
-    private static final int MAX_INSTANCES = 3;
-
-    private static LimitedInstancesClass instance;
-
-    private LimitedInstancesClass() {
-        // Private constructor to prevent direct instantiation
-        instanceCount++;
-    }
-
-    public static LimitedInstancesClass getInstance() {
-        if (instance == null && instanceCount < MAX_INSTANCES) {
-            instance = new LimitedInstancesClass();
+public class ReverseDigits {
+    public static void displayDigitsInReverse(int n) {
+        if (n == 0) {
+            return;
         }
-        return instance;
+
+        System.out.print(n % 10 + " ");
+        displayDigitsInReverse(n / 10);
     }
 
-    public static int getInstanceCount() {
-        return instanceCount;
-    }
-}
-public class Main {
     public static void main(String[] args) {
-        LimitedInstancesClass instance1 = LimitedInstancesClass.getInstance();
-        LimitedInstancesClass instance2 = LimitedInstancesClass.getInstance();
-        LimitedInstancesClass instance3 = LimitedInstancesClass.getInstance();
-        LimitedInstancesClass instance4 = LimitedInstancesClass.getInstance();
-
-        System.out.println("Instance count: " + LimitedInstancesClass.getInstanceCount());
+        int number = 12345;
+        displayDigitsInReverse(number);
     }
 }
+
+/*
+********** Runtime Stack Representation ***********
+displayDigitsInReverse(12345)
+displayDigitsInReverse(1234)
+displayDigitsInReverse(123)
+displayDigitsInReverse(12)
+displayDigitsInReverse(1)
+displayDigitsInReverse(0)
+Print: 1
+Print: 2
+Print: 3
+Print: 4
+Print: 5
+*/
