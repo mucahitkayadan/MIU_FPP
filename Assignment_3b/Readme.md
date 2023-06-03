@@ -1,0 +1,2 @@
+1. Write a class that will only have 3 instances. 
+2. Write a class that has 2 instance fields, 1 static field, 2 instance methods,2 static methods, 2 instance initialization block, 2 static initialization block, and 2 constructors. Create a Main class and inside the main method create 2 objects of the class using the different constructor methods. In each method and blocks print some string to console and explain the program execution order. 
