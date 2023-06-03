@@ -1,1 +1,8 @@
-[embed]https://sakai.cs.miu.edu/access/content/attachment/0c7d2036-47b3-4077-aa5d-aaab835d44d4/Assignments/fdb1a203-85a7-43fc-a40a-3ee89e273234/Assignment4.pdf [/embed]
+CS390 Fundamental Programming Practices
+Assignment4
+Solve the following problems using recursion and draw the runtime stack representation of that
+code.
+1. Write a method to display the digits of a given integer value n in reverse order.
+2. Write a method to count the number of digits in an integer value n. Assume that n is
+nonnegative and represented in base ten.
+3. Write a method to compute the sum of all elements of the array arr, of size n
