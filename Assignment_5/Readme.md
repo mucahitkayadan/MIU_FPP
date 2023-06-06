@@ -1,7 +1,7 @@
 ![Capture](https://github.com/mucahitkayadan/MIU_FPP/assets/23214076/59200017-dc6b-4b61-bf38-9107ec5e6f8e)
 
 <h1>Lesson – 5 – Inheritance and Polymorphism.</h1>
-<h3>Note : Need to solve all the problems in a Polymorphic way.</h3
+<h3>Note : Need to solve all the problems in a Polymorphic way.</h3>
 <h2>Day – 1</h2>
 Perform the following tasks
 a. The return value of calcualteArea() & calculatePerimeter() is double.
