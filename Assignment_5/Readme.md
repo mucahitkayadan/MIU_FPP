@@ -29,7 +29,7 @@ Start by creating classes
 Professor
 Secretary
 DeptEmployee
-having the following relationship:
+having the following relationship
 ![Capture](https://github.com/mucahitkayadan/MIU_FPP/assets/23214076/1991d54d-31f2-48b5-a11f-a555a0803aea)
 Place instance fields and corresponding accessor/mutator methods in DeptEmployee to represent
 name and hire date (as a type of LocalDate )(do not create accessors or mutators for salary). Do
