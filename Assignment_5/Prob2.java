@@ -132,4 +132,57 @@ class Secretary extends DeptEmployee {
     }
 
     /**
-     * Computes the salary of the secretary
+     * Computes the salary of the secretary.
+     *
+     * @return the computed salary of the secretary
+     */
+    @Override
+    public double computeSalary() {
+        // Add your logic to compute the salary for a Secretary
+        // Example: return baseSalary + (overtimeHours * overtimeRate);
+        return super.computeSalary() + (overtimeHours * 12);
+    }
+}
+
+/**
+ * Represents the main class to test the department and its employees.
+ */
+public class Main {
+    /**
+     * The main method of the application.
+     *
+     * @param args the command-line arguments
+     */
+    public static void main(String[] args) {
+        // Create instances of professors and secretaries
+        Professor professor1 = new Professor("John Doe", LocalDate.of(2010, 1, 1), 5);
+        Professor professor2 = new Professor("Jane Smith", LocalDate.of(2015, 3, 15), 8);
+        Professor professor3 = new Professor("David Johnson", LocalDate.of(2018, 7, 20), 3);
+
+        Secretary secretary1 = new Secretary("Mary Johnson", LocalDate.of(2012, 6, 10), 10);
+        Secretary secretary2 = new Secretary("Emily Davis", LocalDate.of(2016, 9, 5), 8);
+
+        // Create an array of department employees
+        DeptEmployee[] department = new DeptEmployee[5];
+        department[0] = professor1;
+        department[1] = professor2;
+        department[2] = professor3;
+        department[3] = secretary1;
+        department[4] = secretary2;
+
+        // Ask the user if they want to see the sum of all salaries
+        // Assuming user input is given as "Y" or "N" (case-insensitive)
+        String userInput = "Y"; // Replace with actual user input
+
+        if (userInput.equalsIgnoreCase("Y")) {
+            // Calculate the sum of all salaries in the department
+            double totalSalary = 0.0;
+            for (DeptEmployee employee : department) {
+                totalSalary += employee.computeSalary();
+            }
+
+            // Output the result
+            System.out.println("Total Salary of all Professors and Secretaries: " + totalSalary);
+        }
+    }
+}
