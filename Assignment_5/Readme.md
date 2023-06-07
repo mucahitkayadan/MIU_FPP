@@ -24,11 +24,11 @@ A university department consists of professors and secretaries. Each professor a
 has a name, a salary, and a hire date. Use inheritance and polymorphism to create an application
 that represents the department and its professors and secretaries as objects, and provides a test
 class that creates 3 professors and 2 secretaries, and then outputs the combined total of all of
-their salaries.
-Start by creating classes
-Professor
-Secretary
-DeptEmployee
+their salaries.<br>
+Start by creating classes<br>
+- Professor<br>
+- Secretary<br>
+- DeptEmployee<br>
 having the following relationship
 
 ![Capture2](https://github.com/mucahitkayadan/MIU_FPP/assets/23214076/1991d54d-31f2-48b5-a11f-a555a0803aea)
