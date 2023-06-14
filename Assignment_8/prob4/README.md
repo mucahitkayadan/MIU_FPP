@@ -31,7 +31,8 @@ list.addLast("Tom");
 System.out.println(list);
 
 list.remove("Bill");
-System.out.println(list);```
+System.out.println(list);
+```
 
 ## Requirements
 
