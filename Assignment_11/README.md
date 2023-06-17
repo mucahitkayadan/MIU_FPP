@@ -24,6 +24,9 @@ To use the project, follow these steps:
 1.  Compile the Java files: `javac Student.java Key.java Admin.java Test.java`
 2.  Run the program: `java prob1.Test`
 
+Conclusion
+-----------
+![The Result After Running:](img/result.png)
 Requirements
 ------------
 
